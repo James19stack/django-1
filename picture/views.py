@@ -8,6 +8,8 @@ def welcome(request):
 
 def people (request):
     return render(request,'gala/people.html')
+def food (request):
+    return render(request,'gala/food.html')    
 
 def travel (request):
 
