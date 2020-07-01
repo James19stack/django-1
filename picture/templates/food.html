@@ -1,4 +1,4 @@
-{%extends 'gala/base.html'%}
+{%extends 'base.html'%}
 {% load bootstrap3 %}
 {% load static%}
 {% block styles %}
@@ -31,25 +31,14 @@ position:absolute;
 <div class="container">
 <h1 style="color: #66fcf1; ">pictures</h1><hr>
 <div id="gallery" class="container-fluid">  
-  <img src="{% static 'images/photo1.jpg'%}" class="thumbnail">
+  <img src="{% static 'images/photo1.jpg'%}" class="card img-responsive">
   <img src="{% static 'images/photo2.jpg'%}" class="card img-responsive">
   <img src="{% static 'images/photo3.jpg'%}" class="card img-responsive">
-  <img src="{% static 'images/photo4.jpg'%}" class="thumbnail" >
-  <img src="{% static 'images/photo5.jpg'%}" class="thumbnail">
-  <img src="{% static 'images/photo6.jpg'%}" class="thumbnail"  >
-  <img src="{% static 'images/photo7.jpg'%}"  class="thumbnail" >
-  <!-- <img src="{% static 'images/day.jpg'%}" class="thumbnail" >
-  <img src="{% static 'images/rat.jpg'%}" class="thumbnail" >
-  <img src="{% static 'images/ryt.jpg'%}" class="thumbnail">
-  <img src="{% static 'images/wed.jpg'%}" class="thumbnail">
-  <img src="{% static 'images/light.jpg'%}" class="card img-responsive">
-  <img src="{% static 'images/wers.jpg'%}" class="card img-responsive">
-  <img src="{% static 'images/eye.jpg'%}" class="card img-responsive">
-  <img src="{% static 'images/rt.jpg'%}" class="card img-responsive">
-  <img src="{% static 'images/dev.jpg'%}" class="card img-responsive">
-  <img src="{% static 'images/wew.jpg'%}" class="card img-responsive">
-  <img src="{% static 'images/look.jpg'%}" class="card img-responsive">
-   -->
+  <img src="{% static 'images/photo4.jpg'%}" class="card img-responsive" >
+  <img src="{% static 'images/photo5.jpg'%}" class="card img-responsive">
+  <img src="{% static 'images/photo6.jpg'%}" class="card img-responsive">
+  <img src="{% static 'images/photo7.jpg'%}"  class="card img-responsive" >
+ 
   
   
 </div>

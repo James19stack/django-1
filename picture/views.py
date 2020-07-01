@@ -4,19 +4,15 @@ from .models import Image,Category,Location
 
 # Create your views here.
 def welcome(request):
-    return render(request,'gala/welcome.html')
+    return render(request,'welcome.html')
 
 def people (request):
-    return render(request,'gala/people.html')
+    return render(request,'people.html')
 def food (request):
-    return render(request,'gala/food.html')    
+    return render(request,'food.html')    
 
 def travel (request):
-
-    context={
-        'images':Image.objects.all()
-    }
-    return render(request,'gala/travel.html',context)
+   return render(request,'travel.html')
 
 def search_results(request):
     if 'image' in request.GET and request.GET["image"]:
@@ -26,11 +22,11 @@ def search_results(request):
         message = f"{search_term}"
 
 
-        return render(request, 'gala/search.html',{"message":message,"images":searched_images})
+        return render(request, 'search.html',{"message":message,"images":searched_images})
 
 
     else:
         message = "You haven't searched for any term"
 
-        return render(request,'gala/search.html',{"message":message})
+        return render(request,'search.html',{"message":message})
            

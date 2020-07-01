@@ -7,7 +7,7 @@ urlpatterns=[
     url(r'^$',views.welcome,name = 'welcome'),
     url(r'^people/$',views.people,name = 'people'),
     url(r'^travel/$',views.travel,name = 'travel'),
-    url(r'^food/$',views.travel,name = 'food'),
+    url(r'^food/$',views.food,name = 'food'),
     url(r'^search/$',views.search_results, name='search_results')
 ]
 if settings.DEBUG:
