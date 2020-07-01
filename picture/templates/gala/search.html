@@ -1,0 +1,45 @@
+{%extends 'all-fold/base.html'%} 
+{% load bootstrap3 %}
+{% load static%}
+{% block styles %}
+{% bootstrap_css %}
+<link rel="stylesheet" href="{% static 'css/travel.css' %}">
+{% endblock %}
+{% block content %}
+<div class="day" style="background-color:black;">
+<div class="container">
+
+  <div class="row">
+    {% if images %}
+      <h2>Found {{ images|length }} of searched term {{message}}</h2>
+    {% else %}
+      <h2 style="color: cyan;"> Found 0 images for the search term {{message}}</h2>
+    {% endif %}
+
+  </div>
+
+  <div class="row">
+
+  {% if images %}
+    {% for image in images %}
+      <div class="col-sm-6 col-md-3">
+          <h1 style="color: cyan;">{{image.name}}</h1>
+          <img src="{{image.image.url}}" style="width: 325px;height: 405px;" class="zoom"alt="Image">
+
+          <div class="text-block">
+            <p  style="color: cyan;" >{{image.description}} </p>
+          </div>
+      </div>
+      {% empty %}
+      <h1>not  there</h1>
+    {% endfor %}
+  {% endif %}
+  </div>  
+</div>
+</div>
+{% block scripts %}
+<script src="https://ajax.googleapis.com/a#jax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src = "{% static 'js/diff.js' %}"></script>
+{% bootstrap_javascript %}
+{% endblock %}
+{% endblock %}
