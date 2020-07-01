@@ -1,1 +1,14 @@
 {%extends 'gala/base.html'%}
+{% load bootstrap3 %}
+{% load static%}
+{% block styles %}
+{% bootstrap_css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{% block content %}
+{{block.super}}
+<div class="center">
+    <h1>WELCOME</h1>
+    <div class="btn">Enter</div>
+  </div>
+{% endblock %}
