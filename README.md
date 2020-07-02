@@ -1,7 +1,7 @@
 # GALA
 Developer: Mirara James Maina
 Email: jeffersondev29@gmail.com
-To see the application live link site by clicking here:()
+To see the application live link site by clicking here:(https://mgallery.herokuapp.com/)
 ## Description
 Developing a personal gallery application that you display your photos for others to see. 
 ### Technologies used
