@@ -35,4 +35,4 @@ Create a pull request.
 #### Bugs Requests
 Just by any chance you get caught up or the site is not responding to certain results, feel to post your issue here
 #### License
-This Project is licensed by https://github.com/James19stack/django-1/blob/master/LICENSE
+This Project is licensed by  MIT LICENSE
